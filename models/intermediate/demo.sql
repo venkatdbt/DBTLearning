@@ -1,1 +1,1 @@
-select * from {{ref("int_customers_order_history_joined")}};
+select * from {{ref("int_customers_order_history_joined")}}

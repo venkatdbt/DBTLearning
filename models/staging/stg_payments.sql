@@ -1,6 +1,6 @@
 with source as(
     select *
-    from raw.stripe.payment ),
+    from {{source('stripe','payment')}} ),
 renamed as(
     select 
      id as payment_id,

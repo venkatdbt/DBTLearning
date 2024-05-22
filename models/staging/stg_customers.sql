@@ -6,7 +6,8 @@
 
 with source as(
     select *
-    from raw.jaffle_shop.customers ),
+   from {{source('jaffle_shop','customers')}}
+     ),
 renamed as(
     select 
      id as customer_id,
