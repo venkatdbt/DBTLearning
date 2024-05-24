@@ -5,6 +5,6 @@ renamed as(
     select 
      id as payment_id,
      orderid,
-     amount / 100  --cents to dollars
+     amount / 100 as amount  --cents to dollars
     from source
 ) select * from renamed
